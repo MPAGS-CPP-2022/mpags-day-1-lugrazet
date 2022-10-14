@@ -63,5 +63,6 @@ int main()
         }
     }
 //print output string. 
-std::cout << out_str << std::endl;  
+std::cout << out_str << std::endl;
+return 0;
 }
