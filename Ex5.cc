@@ -1,10 +1,13 @@
 #include <iostream>
 #include <cmath>
 
+/*
+Aims:
+Receive keyboard input. Remove non-alphanumeric characters. 
+Replace any numerical values with their word counterparts. Change all letters to capital letters. Print out the new string.
 
-/*Letters must be only upper-case
-Numbers must be changed to words
-Any other non-alphanumeric characters need to be removed
+Usage: 
+Run. Type until satisfied, then CRTL+D, receive printed output.
 */
 
 int main()
@@ -17,53 +20,47 @@ int main()
     while(std::cin >> in_char)
     {
         //Only allow for alphanumeric characters
-        if (std::isalnum(in_char))
-        {
+        if (std::isalnum(in_char)) {
+            //Change the numbers to their word counterparts
+            //If not a number, capitalise it.
+            //Add the treated character to the output string.
 
-        //Change the numbers to their word counterparts
-        //If not a number, capitalise it.
-        //Add the treated character to the output string.
-        switch (in_char)
-        {
-            case '0':
-                out_str += "ZERO";
-                break;
-            case '1':
-                out_str += "ONE";
-                break;
-            case '2':
-                out_str += "TWO";
-                break;
-            case '3':
-                out_str += "THREE";
-                break;
-            case '4':
-                out_str += "FOUR";
-                break;
-            case '5':
-                out_str += "FIVE";
-                break;
-            case '6':
-                out_str += "SIX";
-                break;
-            case '7':
-                out_str += "SEVEN";
-                break;
-            case '8':
-                out_str += "EIGHT";
-                break;
-            case '9':
-                out_str += "NINE";
-                break;
-            default:
-                out_str += std::toupper(in_char);
-                break;
+            switch (in_char) {
+                case '0':
+                    out_str += "ZERO";
+                    break;
+                case '1':
+                    out_str += "ONE";
+                    break;
+                case '2':
+                    out_str += "TWO";
+                    break;
+                case '3':
+                    out_str += "THREE";
+                    break;
+                case '4':
+                    out_str += "FOUR";
+                    break;
+                case '5':
+                    out_str += "FIVE";
+                    break;
+                case '6':
+                    out_str += "SIX";
+                    break;
+                case '7':
+                    out_str += "SEVEN";
+                    break;
+                case '8':
+                    out_str += "EIGHT";
+                    break;
+                case '9':
+                    out_str += "NINE";
+                    break;
+                default:
+                    out_str += std::toupper(in_char);
+                    break;
+            }
         }
-        
-        
-        }
-
-        
     }
 //print output string. 
 std::cout << out_str << std::endl;  
