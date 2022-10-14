@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+
 int main(){
     //Create double and integer variables
     //Output the product of these
@@ -7,6 +8,7 @@ int main(){
     int b{11};
     std::cout << a * b << std::endl;
 
+    int f{10};
     //Create another string variable
     //Create a single char variable, assign it the value of one of the 
     //letters in the string, and then output this variable
