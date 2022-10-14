@@ -19,8 +19,10 @@ int main()
         //Only allow for alphanumeric characters
         if (std::isalnum(in_char))
         {
-            
+
         //Change the numbers to their word counterparts
+        //If not a number, capitalise it.
+        //Add the treated character to the output string.
         switch (in_char)
         {
             case '0':
@@ -53,8 +55,6 @@ int main()
             case '9':
                 out_str += "NINE";
                 break;
-            
-            //If not a number, then add the capitalised letter to the output 
             default:
                 out_str += std::toupper(in_char);
                 break;
